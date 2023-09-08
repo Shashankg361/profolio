@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+    font-family: "Cursive";  
+}
+
+
+
+.profileContainer{
+  width: 100%;
+  height: 768px;
+  background-image: url("https://images.unsplash.com/photo-1480506132288-68f7705954bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1520&q=80");
+}
+
+.profileCard{
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+
+  
+}
+.profileName{
+  color: #000;
+  grid-column: 2/7;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profileName h1{
+  font-size: 2.5rem;
+  font-family: "Cursive";
+}
+.profileDescription{
+  grid-column: 1/7;
+  background-color: rgba(250, 235, 215, 0.616);
+}
+
+.projectContainer ul{
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  list-style: none;
+  margin : 0 1rem 0  ;
+  overflow-x: scroll ;
+  padding: 0 0 0 1rem;
+  scroll-padding-left: 1rem;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.projectContainer ul li{
+  padding: 0 0 0 1rem;
+}
+
+.projectContainer ul li div.card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:rgb(77, 77, 51,0.2);
+  border-radius: 1rem;
+  width: 300px;
+  height: 450px;
+}
+
+.projectContainer ul::-webkit-scrollbar{
+  display: none;
+}
+
+.profileCard:hover{
+  box-shadow: 7px 4px 50px #202020;
+}
+
+.AboutMe{
+ background-color: rgb(77, 77, 51,0.2);
+ border-radius:1rem ;
+ width: 700px;
+ height: 250px;
+ align-items: center;
+ justify-content: space-between;
+  
+}
+
+.Languages{
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: auto auto auto;
+  font-size: 1.5rem;
+  
+}
