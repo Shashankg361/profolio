@@ -66,24 +66,28 @@ export default function Home() {
       </div>
 
       <div className="bg-white flex flex-col items-center text-black">
-        <div className="">
+        <div>
           <div className="text-black text-center text-2xl"><h1>Languages</h1></div>
           <div className="Languages">
-            <div className="flex items-center p-5"><img src="https://www.ankitweblogic.com/javascript/js_img/javascript.png" alt="Javascript Icon" width="120px" height="120px"></img><span><h1>Javascript</h1></span></div>
-            <div className="flex items-center p-5"><img src="https://www.pngall.com/wp-content/uploads/2016/05/Java-Free-Download-PNG.png" alt="Java Icon" width="100px" height="100px" className="p-3"></img><span className="p-2"><h1>Java</h1></span></div>
-            <div className="flex items-center p-5"><img src="https://www.freeiconspng.com/uploads/c--logo-icon-0.png" alt="C++ Icon" width="100px" height="100px" className="p-3"></img><span className="p-2"><h1>C++</h1></span></div>
-            <div className="flex items-center p-5"><img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="Html Icon" width="100px" height="100px" className="p-3"></img><span className="p-2"><h1>HTML</h1></span></div>
-            <div className="flex items-center p-5"><img src="https://www.pngitem.com/pimgs/m/198-1985012_transparent-css3-logo-png-css-logo-transparent-background.png" alt="Css Icon" width="90px" height="90px" className="p-3"></img><span className="p-2"><h1>CSS</h1></span></div>
+            <div className="flex items-center p-5"><img src="https://www.ankitweblogic.com/javascript/js_img/javascript.png" alt="Javascript Icon" width="85px" height="85px"></img><span><h1>Javascript</h1></span></div>
+            <div className="flex items-center p-5"><img src="https://www.pngall.com/wp-content/uploads/2016/05/Java-Free-Download-PNG.png" alt="Java Icon" width="85px" height="85px" className="p-3"></img><span className="p-2"><h1>Java</h1></span></div>
+            <div className="flex items-center p-5"><img src="https://www.freeiconspng.com/uploads/c--logo-icon-0.png" alt="C++ Icon" width="85px" height="85px" className="p-3"></img><span className="p-2"><h1>C++</h1></span></div>
+            <div className="flex items-center p-5"><img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="Html Icon" width="85px" height="85px" className="p-3"></img><span className="p-2"><h1>HTML</h1></span></div>
+            <div className="flex items-center p-5"><img src="https://www.pngitem.com/pimgs/m/198-1985012_transparent-css3-logo-png-css-logo-transparent-background.png" alt="Css Icon" width="85px" height="85px" className="p-3"></img><span className="p-2"><h1>CSS</h1></span></div>
           </div>
           
           
         </div>
           
           <div>
-            <div className="grid-rows-1 text-black"><h1>Frameworks and Technologies</h1></div>
-            <img src="https://w7.pngwing.com/pngs/79/518/png-transparent-js-react-js-logo-react-react-native-logos-icon-thumbnail.png" alt="react Icon" width="100px" height="100px"></img>
-            <img src="https://static-00.iconduck.com/assets.00/nextjs-icon-2048x1234-pqycciiu.png" alt="react Icon" width="100px" height="100px"></img>
-            <img src="https://p7.hiclipart.com/preview/747/798/387/mysql-database-web-development-computer-software-dolphin.jpg" alt="MySql Icon" width="100px" height="100px"></img>
+            <div className="text-black text-center text-2xl"><h1>Frameworks and Technologies</h1></div>
+            <div className="technologies">
+              <div className="flex items-center p-5"><img src="https://w7.pngwing.com/pngs/79/518/png-transparent-js-react-js-logo-react-react-native-logos-icon-thumbnail.png" alt="react Icon" width="85px" height="85px"></img><span className="p-2"><h1>React</h1></span></div>
+              <div className="flex items-center p-5"><img src="https://static-00.iconduck.com/assets.00/nextjs-icon-2048x1234-pqycciiu.png" alt="react Icon" width="85px" height="85px"></img><span className="p-2"><h1>Next.js</h1></span></div>
+              <div className="flex items-center p-5"><img src="https://p7.hiclipart.com/preview/747/798/387/mysql-database-web-development-computer-software-dolphin.jpg" alt="MySql Icon" width="85px" height="85px"></img><span className="p-2"><h1>MySql</h1></span></div>
+              <div className="flex items-center p-5"><img src="https://w7.pngwing.com/pngs/293/485/png-transparent-tailwind-css-hd-logo.png" alt="MySql Icon" width="85px" height="85px"></img><span className="p-2"><h1>Tailwind</h1></span></div>
+            </div>
+            
           </div>
           
       </div>

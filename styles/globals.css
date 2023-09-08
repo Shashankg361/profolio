@@ -113,3 +113,10 @@ body {
   font-size: 1.5rem;
   
 }
+
+.technologies{
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: auto auto auto auto;
+  font-size: 1.5rem;
+}
