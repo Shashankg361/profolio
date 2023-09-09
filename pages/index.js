@@ -37,22 +37,22 @@ export default function Home() {
         <div className="projectContainer m-14">
           <ul>
             <li>
-              <div className="card"><h2>PlaceHolder1</h2></div>
+              <div className="card"><h1 className="p-1">Weather site</h1><img src="/Weather site.JPG" alt="Weather site" width="250px" height="150px"></img></div>
             </li>
             <li>
-              <div className="card"><h2>PlaceHolder2</h2></div>
+              <div className="card"><h1 className="py-5">Todo</h1><img src="/TODO Javascrpt.JPG" alt="Todo" width="250px" height="3500px"></img></div>
             </li>
             <li>
-              <div className="card"><h2>PlaceHolder3</h2></div>
+            <div className="card"><h1 className="p-2">Web calculator</h1><img src="/webCalculator.JPG" alt="Web calculator" width="250px" height="200px"></img></div>
             </li>
             <li>
-              <div className="card"><h2>PlaceHolder4</h2></div>
+              <div className="card"><h1 className="p-2">Communtiy landing page</h1><div className="w-70 h-96 bg-black flex items-center"><img src="/Community.JPG" alt="community page" width="250px" height="700px"></img></div></div>
             </li>
             <li>
-              <div className="card"><h2>PlaceHolder5</h2></div>
+            <div className="card"><h1 className="p-2">Web calculator</h1><img src="/webCalculator.JPG" alt="Web calculator" width="250px" height="200px"></img></div>
             </li>
             <li>
-              <div className="card"><h2>PlaceHolder6</h2></div>
+            <div className="card"><h1 className="p-2">Web calculator</h1><img src="/webCalculator.JPG" alt="Web calculator" width="250px" height="200px"></img></div>
             </li>
           </ul>
         </div>
