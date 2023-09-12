@@ -32,15 +32,14 @@ body {
 .profileContainer{
   width: 100%;
   height: 768px;
-  background-image: url("https://images.unsplash.com/photo-1480506132288-68f7705954bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1520&q=80");
+  background-image: url("/profile-background.jpg");
+  background-size: cover;
 }
 
 .profileCard{
   border-radius: 1rem;
   display: grid;
   grid-template-columns: auto auto auto;
-
-
   
 }
 .profileName{
@@ -85,8 +84,8 @@ body {
   justify-content: center;
   background-color:rgb(77, 77, 51,0.2);
   border-radius: 1rem;
-  width: 300px;
-  height: 450px;
+  width: 350px;
+  height: 500px;
 }
 
 .projectContainer ul::-webkit-scrollbar{
@@ -135,3 +134,35 @@ body {
   grid-template-columns: auto auto auto auto;
   column-gap: 0.5rem;
 }
+
+@media only screen and (max-width: 600px){
+
+  .profileContainer{
+    width: 100%;
+    height: 100% ;
+    background-image: url("/profile-background.jpg");
+    background-size: cover;
+  }
+
+  .profileCard{
+    display: flex;
+    border-radius: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    
+  }
+  .profileName{
+    color: #000;
+    
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .profileDescription{
+    
+    background-color: rgba(250, 235, 215, 0.616);
+  }
+};
+  
