@@ -24,7 +24,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-    font-family: "Cursive";  
+    font-family: "font-serif";  
 }
 
 
@@ -74,7 +74,7 @@ body {
 }
 
 .projectContainer ul li{
-  padding: 0 0 0 1rem;
+  padding: 0 0 0 0;
 }
 
 .projectContainer ul li div.card{
@@ -109,7 +109,6 @@ body {
 .Languages{
   display: grid;
   column-gap: 2rem;
-
   grid-template-columns: auto auto auto auto auto;
   font-size: 1.5rem;
   
@@ -134,35 +133,116 @@ body {
   grid-template-columns: auto auto auto auto;
   column-gap: 0.5rem;
 }
+.nav-btn{
+  display: none;
+}
+
+
 
 @media only screen and (max-width: 600px){
 
   .profileContainer{
     width: 100%;
-    height: 100% ;
+    height: 768px;
     background-image: url("/profile-background.jpg");
     background-size: cover;
   }
 
   .profileCard{
+    background-color: rgb(24 24 27);
     display: flex;
     border-radius: 1rem;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    
+    height: 652px ;
+    width: 396px;
     
   }
+  .profilePhoto{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: coral;
+    text-align: center;
+  }
   .profileName{
-    color: #000;
-    
-    background-color: antiquewhite;
+    color: white;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 200px;
+    width: 286px;
+
   }
   .profileDescription{
     
-    background-color: rgba(250, 235, 215, 0.616);
+    color: rgb(214 211 209) ;
+    background-color: transparent;
+    height: 276px;
+    width: 327px;
+    text-align: center;
+
   }
+  .Languages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    
+  }
+  
+  .technologies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.5rem;
+  }
+  .footer{
+    flex-direction: column;
+
+  }  
+
+  .nav-btn{
+    display: block;
+    opacity: 1;
+    padding: 1rem;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    color: aliceblue;
+    background-color: #29335C;
+    transition: 1s;
+    transform: translateY(-100vh);
+    z-index: 1;
+}
+
+header .responsive-nav {
+    transform: none;
+}
+
+.nav-close-btn{
+    position: fixed;
+    top:0;
+    right: 0;
+}
+  
 };
   

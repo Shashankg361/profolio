@@ -1,8 +1,9 @@
 import Image from 'next/image';
 
-
 export default function Skills(){
-    <div className="bg-white flex flex-col items-center text-black">
+
+    return (
+        <div className="bg-white flex flex-col items-center text-black">
           <div>
             <div className="text-black text-center text-2xl"><h1>Languages</h1></div>
             <div className="Languages">
@@ -24,4 +25,6 @@ export default function Skills(){
             </div>  
           </div>
         </div>
+    )
+    
 }

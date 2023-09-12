@@ -4,7 +4,7 @@ import { faLinkedin, faTwitter , faGoogle , faInstagram } from "@fortawesome/fre
 
 export default function ContactMe(){
     return(
-        <div className="flex items-center justify-between px-10 py-5 bg-gray-800">
+        <div className="flex items-center justify-between px-10 py-5 bg-gray-800 footer">
               <div className="copyRight">
                 <div>
                   <FontAwesomeIcon icon={faCopyright} style={{color: "#a4d1e5", width:"27px" ,height:"27px"}} />

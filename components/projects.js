@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Projects(){
     return (
-        <div className="projectContainer m-14">
+        <div className="projectContainer ml-0 my-14">
           <ul>
             <li>
               <div className="card"><h1 className="p-1">Weather site</h1><Image src="/Weather site.JPG" alt="Weather site" width={250} height={150} /></div>
