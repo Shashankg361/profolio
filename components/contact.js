@@ -13,7 +13,7 @@ export default function ContactMe(){
               </div>
               <div className="contactLinks">
                 <div>
-                  <a href="www.linkedin.com/in/shashankg13" target="blank">
+                  <a href="https://www.linkedin.com/in/shashankg13" target="blank">
                     <FontAwesomeIcon icon={faLinkedin} style={{color: "#a4d1e5", width:"27px" ,height:"27px"}}/>
                   </a>
                 </div>
