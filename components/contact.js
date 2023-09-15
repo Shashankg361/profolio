@@ -13,23 +13,23 @@ export default function ContactMe(){
               </div>
               <div className="contactLinks">
                 <div>
-                  <a href="www.linkedin.com/in/shashankg13">
+                  <a href="www.linkedin.com/in/shashankg13" target="blank">
                     <FontAwesomeIcon icon={faLinkedin} style={{color: "#a4d1e5", width:"27px" ,height:"27px"}}/>
                   </a>
                 </div>
                 <div>
-                  <a href="https://twitter.com/Shashank_sk_13">
+                  <a href="https://twitter.com/Shashank_sk_13" target="blank">
                     <FontAwesomeIcon icon={faTwitter} style={{color: "#a4d1e5", width:"27px" ,height:"27px"}}/>
                   </a>
                   
                 </div>
                 <div>
-                  <a href="mailto:shashankg361@gmail.com">
-                    <FontAwesomeIcon icon={faGoogle} style={{color: "#a4d1e5", width:"27px" ,height:"27px"}}/>
+                  <a href="mailto:shashankg361@gmail.com" target="blank">
+                    <FontAwesomeIcon icon={faGoogle} style ={{color: "#a4d1e5", width:"27px" ,height:"27px"}}/>
                   </a>
                 </div>
                 <div>
-                  <a href="https://www.instagram.com/shashank_sk_13/">
+                  <a href="https://www.instagram.com/shashank_sk_13/" target="blank">
                     <FontAwesomeIcon icon={faInstagram} style={{color: "#a4d1e5", width:"27px" ,height:"27px"}}/>
                   </a>
                 </div>
