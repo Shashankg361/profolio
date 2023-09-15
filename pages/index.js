@@ -1,4 +1,5 @@
   import Skills from "@/components/Skills";
+import AboutMe from "@/components/about";
   import ContactMe from "@/components/contact";
   import Navbar from "@/components/navBar";
   import Profile from "@/components/profile";
@@ -21,6 +22,8 @@ export default function Home() {
         <Profile />
 
         <Projects />
+
+        <AboutMe />
 
         <Skills />
 

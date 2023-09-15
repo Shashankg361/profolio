@@ -22,15 +22,15 @@ export default function Navbar(){
         <div className='flex bg-white text-slate-800 items-center justify-between' >
           <div >LOGO</div>
           <div >
-            <nav ref={navRef} className="flex items-center ">
-                <ul>
+            <nav ref={navRef} >
+                <ul className="flex items-center ">
                 <li className='p-2' onClick={showNav}>profile</li>
                 <li className='p-2' onClick={showNav}>projects</li>
                 <li className='p-2' onClick={showNav}>contact</li>
                 <li>
                     <div>
                         <button className="nav-btn nav-close-btn" onClick={showNav}>  
-                        <FontAwesomeIcon icon={faXmarkCircle} style={{color: "#a4d1e5", width:"25px" ,height:"25px"}} />
+                        <FontAwesomeIcon icon={faXmarkCircle} style={{color: "aliceblue", width:"25px" ,height:"25px"}} />
                         </button>
                     </div>
                 </li>

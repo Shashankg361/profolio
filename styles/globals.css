@@ -25,6 +25,7 @@ body {
     )
     rgb(var(--background-start-rgb));
     font-family: "font-serif";  
+    background-color: black;
 }
 
 
@@ -42,10 +43,18 @@ body {
   grid-template-columns: auto auto auto;
   
 }
+.profilePhoto{
+  text-align: center;
+  color: black;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: aliceblue;
+}
 .profileName{
-  color: #000;
+  color: rgb(241 245 249);
   grid-column: 2/7;
-  background-color: antiquewhite;
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -56,8 +65,9 @@ body {
   font-family: "Cursive";
 }
 .profileDescription{
+  color: rgb(241 245 249);
   grid-column: 1/7;
-  background-color: rgba(250, 235, 215, 0.616);
+  background-color: transparent;
 }
 
 .projectContainer ul{
@@ -84,8 +94,9 @@ body {
   justify-content: center;
   background-color:rgb(77, 77, 51,0.2);
   border-radius: 1rem;
+  margin:  0 25px 0 0;
   width: 350px;
-  height: 500px;
+  height: 550px;
 }
 
 .projectContainer ul::-webkit-scrollbar{
@@ -149,7 +160,6 @@ body {
   }
 
   .profileCard{
-    background-color: rgb(24 24 27);
     display: flex;
     border-radius: 1rem;
     flex-direction: column;
@@ -163,7 +173,6 @@ body {
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    background-color: coral;
     text-align: center;
   }
   .profileName{
@@ -186,19 +195,27 @@ body {
     text-align: center;
 
   }
-  .Languages{
-    display: flex;
+  .AboutMe{
     flex-direction: column;
-    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+  .aboutpara{
+    width: auto;
+    padding: 20px 5px 5px 5px;
+  }
+  .Languages{
+    grid-template-columns: auto auto;
+    column-gap: 1rem;
+  
     font-size: 1rem;
     
   }
   
   .technologies{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 0.5rem;
+    grid-template-columns: auto auto;
+    column-gap: 1rem;
+    font-size: 1rem;
   }
   .footer{
     flex-direction: column;
@@ -228,14 +245,18 @@ nav{
     justify-content: center;
     gap: 1.5rem;
     color: aliceblue;
-    background-color: #29335C;
+    background-color:rgb(24 24 27);
     transition: 1s;
     transform: translateY(-100vh);
     z-index: 1;
 }
 
-header .responsive-nav {
+.responsive-nav {
     transform: none;
+}
+
+nav ul{
+  flex-direction: column;
 }
 
 .nav-close-btn{

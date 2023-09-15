@@ -9,7 +9,7 @@ export default function ContactMe(){
                 <div>
                   <FontAwesomeIcon icon={faCopyright} style={{color: "#a4d1e5", width:"27px" ,height:"27px"}} />
                 </div>
-                <div><h1> 2023 Shashank gupta </h1></div>
+                <div><h1 className="text-gray-100"> 2023 Shashank gupta </h1></div>
               </div>
               <div className="contactLinks">
                 <div>
