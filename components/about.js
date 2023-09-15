@@ -1,3 +1,8 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faFile } from "@fortawesome/free-regular-svg-icons";
+import Image from "next/image";
+
 export default function AboutMe(){
     return (
         <div className="flex flex-col items-center m-10">
@@ -13,9 +18,9 @@ export default function AboutMe(){
             </div>
           </div>
           <div className="flex items-center justify-between w-full mt-5">
-            <a href="https://github.com/Shashankg361" target="blank"><button className="border-2 border-black rounded-md p-2 hover:bg-zinc-300 hover:text-slate-800">Github</button></a>
-            <a href="https://drive.google.com/file/d/1zCWB9R2SIO4NnNGWgZsHTDsEJLpR8aDF/view?usp=sharing" target="blank"><button className="border-2 border-black rounded-md p-2 hover:bg-zinc-300 hover:text-slate-800">Resume</button></a>
-            <a href="https://leetcode.com/Shashank_sk_13/" target="blank"><button className="border-2 border-black rounded-md p-2 hover:bg-zinc-300 hover:text-slate-800">Leetcode</button></a>
+            <a href="https://github.com/Shashankg361" target="blank"><button className="border-2 border-black rounded-md p-2 hover:bg-zinc-300 hover:text-slate-800"> <div className="flex items-center justify-center"><span><FontAwesomeIcon icon={faGithub} style={{color: "#a4d1e5", width:"27px" ,height:"27px" ,padding:"5px"}}/></span><span>Github</span></div></button></a>
+            <a href="https://drive.google.com/file/d/1zCWB9R2SIO4NnNGWgZsHTDsEJLpR8aDF/view?usp=sharing" target="blank"><button className="border-2 border-black rounded-md p-2 hover:bg-zinc-300 hover:text-slate-800"><div className="flex items-center justify-center"><span><FontAwesomeIcon icon={faFile} style={{color: "#a4d1e5", width:"27px" ,height:"27px" ,padding:"5px"}}/></span><span>Resume</span></div></button></a>
+            <a href="https://leetcode.com/Shashank_sk_13/" target="blank"><button className="border-2 border-black rounded-md p-2 hover:bg-zinc-300 hover:text-slate-800"><div className="flex items-center justify-center"><span><Image src={"/leetCode.png"} width={33} height={33} style={{color: "#a4d1e5",  padding:"5px"}}/></span><span>LeetCode</span></div></button></a>
             </div>
           </div>
           
