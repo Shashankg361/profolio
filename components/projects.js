@@ -6,12 +6,13 @@ export default function Projects(){
 
     const containerRef = useRef(null);
     const cardWidth = 350;
-    const autoScrollInterval =2500;
+    const autoScrollInterval =3000;
     let intervalId;
 
     useEffect(()=>{
       const container = containerRef.current;
 
+      
       if(container){
         container.style.scrollBehavior = 'smooth';
       }
@@ -34,19 +35,22 @@ export default function Projects(){
 
       startAutoScroll();
 
-      const card = document.querySelectorAll('.card');
+      // const card = document.querySelectorAll('.card');
 
-      card.forEach(element => {
+      // card.forEach(element => {
         
-        element.addEventListener('mouseenter' , ()=>{
-          stopAutoScrolling();
-        });
+      //   element.addEventListener('mouseenter' , ()=>{
+      //     console.log("Mouse entered");
+      //     stopAutoScrolling();
+      //   });
 
-        element.addEventListener('mouseleave' , ()=>{
-          startAutoScroll();
-        });
+      //   element.addEventListener('mouseleave' , ()=>{
+      //     console.log("Mouse leaved");
+      //     container.scrollLeft = 0;
+      //     startAutoScroll();
+      //   });
 
-      });
+      // });
 
       return ()=>{
         clearInterval(intervalId);
@@ -60,7 +64,12 @@ export default function Projects(){
 
 
     return (
-        <div className="projectContainer ml-0 my-14">
+      <div className='Project'>
+      <div className='text-center m-5 text-2xl'>
+        <h1>Projects</h1>
+      </div>
+        <div className="projectContainer  ml-0 my-14">
+          
           <ul ref={containerRef}>
             <li>
               <div className="card"><h1 className="p-1">Weather site</h1><Image src="/Weather site.JPG" alt="Weather site" width={250} height={150} /><Buttons github={"https://github.com/Shashankg361/WeatherApp"} demo={"https://shashankg361.github.io/WeatherApp/"}/></div>
@@ -81,6 +90,7 @@ export default function Projects(){
             <div className="card"><h1 className="p-2">FantasticQuiz </h1><Image src="/Quiz.JPG" alt="FantasticQuiz " width={250} height={200} /><Buttons demo={"https://shashankg361.github.io/Quiz-site/"} github={"https://github.com/Shashankg361/Quiz-site"}/></div>
             </li>
           </ul>
+        </div>
         </div>
     )
 }

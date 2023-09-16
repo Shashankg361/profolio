@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function Skills(){
 
     return (
-        <div className="bg-white flex flex-col items-center text-black">
+        <div className="bg-white flex flex-col items-center text-black Skills">
           <div>
             <div className="text-black text-center text-2xl"><h1>Languages</h1></div>
             <div className="Languages">

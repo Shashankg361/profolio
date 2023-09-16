@@ -2,6 +2,7 @@ import React ,{ useRef , useEffect} from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmarkCircle } from "@fortawesome/free-regular-svg-icons";
 import Image from "next/image";
+import { faDollar, faS } from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar(){
 
@@ -13,20 +14,26 @@ export default function Navbar(){
         {
             navRef.current.classList.toggle("responsive-nav");
         }
-            
-        
+    }
+
+    const scrollTo = (className)=>{
+        const element = document.querySelector(className);
+
+        element.scrollIntoView();
     }
 
     return (
         <header>
         <div className='flex bg-white text-slate-800 items-center justify-between' >
-          <div >LOGO</div>
+          <div><FontAwesomeIcon icon={faDollar} style={{color: "black", width:"34px" ,height:"34px"}}/></div>
           <div >
             <nav ref={navRef} >
                 <ul className="flex items-center ">
-                <li className='p-2' onClick={showNav}>profile</li>
-                <li className='p-2' onClick={showNav}>projects</li>
-                <li className='p-2' onClick={showNav}>contact</li>
+                <li className='p-2' onClick={()=>{showNav() ; scrollTo(".profileContainer")}}>Profile</li>
+                <li className='p-2' onClick={()=>{showNav() ; scrollTo(".Project")}}>Projects</li>
+                <li className='p-2' onClick={()=>{showNav() ; scrollTo(".About")}}>AboutMe</li>
+                <li className='p-2' onClick={()=>{showNav() ; scrollTo(".Skills")}}>Skills</li>
+                <li className='p-2' onClick={()=>{showNav() ; scrollTo(".Contact")}}>Contact</li>
                 <li>
                     <div>
                         <button className="nav-btn nav-close-btn" onClick={showNav}>  
