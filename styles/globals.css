@@ -34,7 +34,7 @@ nav ul{
 
 .profileContainer{
   width: 100%;
-  height: auto;
+  height: 768px;
   background-image: url("/profile-background.jpg");
   background-size: cover;
 }
