@@ -271,7 +271,7 @@ nav ul{
   display: grid;
   grid-template-columns: auto auto;
   column-gap: auto;
-  row-gap: auto;
+  row-gap: 2rem;
 }
   
 };

@@ -7,7 +7,7 @@ export default function Projects(){
     const containerRef = useRef(null);
     const cardWidth = 350;
     const autoScrollInterval =3000;
-    //let intervalId;
+    const intervalId =useRef(null) ;
 
     useEffect(()=>{
       const container = containerRef.current;
@@ -18,7 +18,7 @@ export default function Projects(){
       }
 
       const startAutoScroll =()=>{
-        setInterval(()=>{
+        intervalId.current =setInterval(()=>{
           if(container){
             container.scrollLeft += cardWidth;
             if(container.scrollLeft + container.clientWidth === container.scrollWidth){
@@ -53,7 +53,7 @@ export default function Projects(){
       // });
 
       return ()=>{
-        clearInterval(intervalId);
+        clearInterval(intervalId.current);
       };
     },[]);
 

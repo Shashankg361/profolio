@@ -33,6 +33,9 @@ export default function ContactMe(){
                     <FontAwesomeIcon icon={faInstagram} style={{color: "#a4d1e5", width:"27px" ,height:"27px"}}/>
                   </a>
                 </div>
+                <div style={{gridColumn:"1/4"}}>
+                  <h1>+91 8169847971</h1>
+                </div>
               </div>
               
           </div>
