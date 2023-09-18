@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCopyright } from "@fortawesome/free-regular-svg-icons";
-import { faLinkedin, faTwitter , faGoogle , faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faXTwitter , faGoogle , faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 export default function ContactMe(){
     return(
@@ -19,7 +19,7 @@ export default function ContactMe(){
                 </div>
                 <div>
                   <a href="https://twitter.com/Shashank_sk_13" target="blank">
-                    <FontAwesomeIcon icon={faTwitter} style={{color: "#a4d1e5", width:"27px" ,height:"27px"}}/>
+                  <FontAwesomeIcon icon={faXTwitter} style ={{color: "#a4d1e5", width:"27px" ,height:"27px"}} />
                   </a>
                   
                 </div>

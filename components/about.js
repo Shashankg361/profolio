@@ -11,9 +11,10 @@ export default function AboutMe(){
             <div><text> About Me ! </text></div>
             <div className="w-96 aboutpara">
               <p>
-                {`Hello! I'm shashank gupta a computer engineer student , pursuing this degree from K.C. college of engineering affiliated by  
-                 Mumbai university currently I am in final year of my degree . Aspiring developer who works on self project and learn the 
-                about technologies from the internet`} 
+                {`Hello! I'm shashank gupta a computer engineering student , pursuing this degree from K.C. college of engineering affiliated with  
+                 Mumbai university currently I am in final year. Aspiring developer who works on self projects and keep learning 
+                about new technologies. My core languages are Javascript, Java, c++ & I am proficient in technologies Html, React, Next.js, CSS, MySql, Git and Github. Putting efforts on solving
+                 problems , Willing to kick start my carreer as software engineer. `} 
               </p>
             </div>
           </div>
