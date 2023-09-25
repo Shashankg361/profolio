@@ -8,7 +8,7 @@ export default function Profile(){
           <h1 className='text-2xl m-2 text-gray-100'>Welcome!!</h1>
           <div className='w-2/3 m-2 h-fit p-7 bg-stone-950 profileCard'>
             <div className="profilePhoto">
-              <Image src="/profileimage2.png" width={200} height={200} alt="Profile image"/>
+              <Image src="/profileImg.png" width={200} height={200} alt="Profile image"/>
             </div>
             <div className="profileName">
               <h1>{` Hello! I'm , `}</h1>
