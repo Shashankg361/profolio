@@ -15,18 +15,22 @@ export default function Projects(){
       
       if(container){
         container.style.scrollBehavior = 'smooth';
+        
       }
 
       const startAutoScroll =()=>{
-        intervalId.current =setInterval(()=>{
-          if(container){
-            container.scrollLeft += cardWidth;
-            if(container.scrollLeft + container.clientWidth === container.scrollWidth){
+        intervalId.current = setInterval(() => {
+          if (container) {
+            container.scrollLeft += cardWidth; // Adjust the scroll speed as needed
+      
+            if (container.scrollLeft >= container.scrollWidth - container.clientWidth -1) {
+              console.log('Reached end');
+              clearInterval(intervalId.current);
               container.scrollLeft = 0;
+              startAutoScroll(); // Restart the scrolling after reaching the end
             }
           }
-      
-        },autoScrollInterval);
+        }, autoScrollInterval);
       }
 
       // const stopAutoScrolling = ()=>{
@@ -75,10 +79,16 @@ export default function Projects(){
               <div className="card"><h1 className="p-1">Weather site</h1><Image src="/Weather site.JPG" alt="Weather site" width={250} height={150} /><Buttons github={"https://github.com/Shashankg361/WeatherApp"} demo={"https://shashankg361.github.io/WeatherApp/"}/></div>
             </li>
             <li>
-              <div className="card"><h1 className="py-5">Todo</h1><Image src="/TODO Javascrpt.JPG" alt="Todo" width={250} height={350} /><Buttons github={"https://github.com/Shashankg361/Todos"} demo={"https://shashankg361.github.io/Todos/"}/></div>
+              <div className="card"><h1 className="py-5">Todo</h1><Image src="/todo.JPG" alt="Todo" width={250} height={350} /><Buttons github={"https://github.com/Shashankg361/nodeTodo"} demo={"https://node-todo-delta.vercel.app/"}/></div>
             </li>
             <li>
             <div className="card"><h1 className="p-2">Web calculator</h1><Image src="/webCalculator.JPG" alt="Web calculator" width={250} height={200} /><Buttons github={"https://github.com/Shashankg361/Calculator"} demo={"https://calci13.netlify.app/"}/></div>
+            </li>
+            <li>
+            <div className="card"><h1 className="p-2">Spoty</h1><Image src="/spoty.JPG" alt="Spoty" width={250} height={200} /><Buttons github={"https://github.com/Shashankg361/Spoty"} demo={"https://spoty-13.vercel.app/"}/></div>
+            </li>
+            <li>
+            <div className="card"><h1 className="p-2">URL_Shortener</h1><Image src="/URL-Shortener.JPG" alt="URL_Shortener" width={250} height={200} /><Buttons github={"https://github.com/Shashankg361/URL-shortener-frontend"} demo={"https://urlshortener13.netlify.app/"}/></div>
             </li>
             <li>
               <div className="card"><h1 className="p-2">Communtiy landing page</h1><div className="w-70 h-96 bg-black flex items-center"><Image src="/Community.JPG" alt="community page" width={250} height={700} /></div><Buttons github={"https://github.com/Shashankg361/React-learning"} demo={"https://shashankreactpage.netlify.app/"}/></div>
