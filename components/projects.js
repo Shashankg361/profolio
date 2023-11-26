@@ -24,7 +24,6 @@ export default function Projects(){
             container.scrollLeft += cardWidth; // Adjust the scroll speed as needed
       
             if (container.scrollLeft >= container.scrollWidth - container.clientWidth -1) {
-              console.log('Reached end');
               clearInterval(intervalId.current);
               container.scrollLeft = 0;
               startAutoScroll(); // Restart the scrolling after reaching the end

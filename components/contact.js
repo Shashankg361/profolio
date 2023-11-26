@@ -34,7 +34,7 @@ export default function ContactMe(){
                   </a>
                 </div>
                 <div style={{gridColumn:"1/4"}}>
-                  <h1>+91 8169847971</h1>
+                  <h1 className="text-white">+91 8169847971</h1>
                 </div>
               </div>
               
