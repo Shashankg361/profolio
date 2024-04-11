@@ -7,7 +7,7 @@ import AboutMe from "@/components/about";
 
 export default function Home() {
   return (
-    <div>
+    <div className = "bg-black text-white">
 
       <header>
 

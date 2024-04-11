@@ -32,39 +32,12 @@ export default function Projects(){
         }, autoScrollInterval);
       }
 
-      // const stopAutoScrolling = ()=>{
-      //   clearInterval(intervalId);
-      // }
-
       startAutoScroll();
-
-      // const card = document.querySelectorAll('.card');
-
-      // card.forEach(element => {
-        
-      //   element.addEventListener('mouseenter' , ()=>{
-      //     console.log("Mouse entered");
-      //     stopAutoScrolling();
-      //   });
-
-      //   element.addEventListener('mouseleave' , ()=>{
-      //     console.log("Mouse leaved");
-      //     container.scrollLeft = 0;
-      //     startAutoScroll();
-      //   });
-
-      // });
 
       return ()=>{
         clearInterval(intervalId.current);
       };
     },[]);
-
-    
-
-
-
-
 
     return (
       <div className='Project'>
@@ -73,7 +46,22 @@ export default function Projects(){
       </div>
         <div className="projectContainer  ml-0 my-14">
           
-          <ul ref={containerRef}>
+          <ul ref={containerRef} className='overflow-x-scroll'>
+            <li>
+            <div className="card"><h1 className="p-2">Proof of presence</h1><div><Image src="/proof-of-presence.jpg" alt="proof of presence" width={185} height={100} /></div><a href="https://github.com/0xPranavx/proof-of-presence"><button className="border-2 border-black rounded-md p-2 hover:bg-zinc-300 hover:text-slate-800 mt-5">Github</button></a></div>
+            </li> 
+            <li>
+              <div className="card"><h1 className="p-2">Spoty</h1><Image src="/spoty.JPG" alt="Spoty" width={250} height={200} /><Buttons github={"https://github.com/Shashankg361/Spoty"} demo={"https://spoty-13.vercel.app/"}/></div>
+            </li>
+            <li>
+            <div className="card"><h1 className="p-2">ChitChat</h1><Image src="/chitchat.png" alt="ChitChat Image" width={250} height={200} /><Buttons github={"https://github.com/Shashankg361/ChitChat"} demo={"https://chitchat-rcqe.onrender.com/"}/></div>
+            </li>
+            <li>
+            <div className="card"><h1 className="p-2">BuyNSell</h1><Image src="/BuyNSell.png" alt="BuyNSell" width={250} height={200} /><Buttons github={"https://github.com/Shashankg361/Sell-N-Buy"} demo={"https://shashank-booking-site.vercel.app/"}/></div>
+            </li>
+            <li>
+              <div className="card"><h1 className="p-2">URL_Shortener</h1><Image src="/URL-Shortener.JPG" alt="URL_Shortener" width={250} height={200} /><Buttons github={"https://github.com/Shashankg361/URL-shortener-frontend"} demo={"https://urlshortener13.netlify.app/"}/></div>
+            </li>
             <li>
               <div className="card"><h1 className="p-1">Weather site</h1><Image src="/Weather site.JPG" alt="Weather site" width={250} height={150} /><Buttons github={"https://github.com/Shashankg361/WeatherApp"} demo={"https://shashankg361.github.io/WeatherApp/"}/></div>
             </li>
@@ -83,18 +71,6 @@ export default function Projects(){
             <li>
             <div className="card"><h1 className="p-2">Web calculator</h1><Image src="/webCalculator.JPG" alt="Web calculator" width={250} height={200} /><Buttons github={"https://github.com/Shashankg361/Calculator"} demo={"https://calci13.netlify.app/"}/></div>
             </li>
-            <li>
-            <div className="card"><h1 className="p-2">Spoty</h1><Image src="/spoty.JPG" alt="Spoty" width={250} height={200} /><Buttons github={"https://github.com/Shashankg361/Spoty"} demo={"https://spoty-13.vercel.app/"}/></div>
-            </li>
-            <li>
-            <div className="card"><h1 className="p-2">URL_Shortener</h1><Image src="/URL-Shortener.JPG" alt="URL_Shortener" width={250} height={200} /><Buttons github={"https://github.com/Shashankg361/URL-shortener-frontend"} demo={"https://urlshortener13.netlify.app/"}/></div>
-            </li>
-            <li>
-              <div className="card"><h1 className="p-2">Communtiy landing page</h1><div className="w-70 h-96 bg-black flex items-center"><Image src="/Community.JPG" alt="community page" width={250} height={700} /></div><Buttons github={"https://github.com/Shashankg361/React-learning"} demo={"https://shashankreactpage.netlify.app/"}/></div>
-            </li>
-            <li>
-            <div className="card"><h1 className="p-2">Proof of presence</h1><div><Image src="/proof-of-presence.jpg" alt="proof of presence" width={185} height={100} /></div><a href="https://github.com/Shashankg361/proof-of-presence"><button className="border-2 border-black rounded-md p-2 hover:bg-zinc-300 hover:text-slate-800 mt-5">Github</button></a></div>
-            </li> 
             <li>
             <div className="card"><h1 className="p-2">FantasticQuiz </h1><Image src="/Quiz.JPG" alt="FantasticQuiz " width={250} height={200} /><Buttons demo={"https://shashankg361.github.io/Quiz-site/"} github={"https://github.com/Shashankg361/Quiz-site"}/></div>
             </li>
