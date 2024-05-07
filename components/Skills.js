@@ -21,7 +21,7 @@ export default function Skills(){
                 <div className="flex items-center "><Image src="/Next.js-icon.png" alt="Next.js Icon" width={60} height={60} /><span className="p-2"><h1>Next.js</h1></span></div>
                 <div className="flex items-center "><Image src="/MySql-icon.png" alt="MySql Icon" width={80} height={80} /><span className="p-2"><h1>MySql</h1></span></div>
                 <div className="flex items-center "><Image src="/Tailwind-icon.png" alt="Tailwind Icon" width={60} height={60} /><span className="p-2" ><h1>Tailwind</h1></span></div>
-                <div className="flex items-center "><Image src="/firestore-icon.png" alt="Firestore Icon" width={60} height={60} /><span className="p-2"><h1>Firestore</h1></span></div>
+                <div className="flex items-center "><Image src="/MongoDB.jpg" alt="MongoDB Icon" width={60} height={60} /><span className="p-2 pl-0"><h1>MongoDB</h1></span></div>
             </div>  
           </div>
         </div>
